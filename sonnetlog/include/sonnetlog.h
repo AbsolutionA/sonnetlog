@@ -61,7 +61,7 @@
 void sonnet_log_set_file_location_and_name(const char *file_location);
 
 /** @brief Will print a custom message with a custom inputed tag name given to this function on to stderr and 
- * a .txt file that has been set in the sonnet_log_set_file_location() function and only if the log_on_or_off argument is 0.
+ * a .txt file that has been set in the sonnet_log_set_file_location() function and only if the log_on_or_off argument is 1.
 */
 void sonnet_log(const char *msg, const char *tag_name, const int log_on_or_off);
 
