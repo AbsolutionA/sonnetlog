@@ -51,7 +51,7 @@
     char *buffer = (char *)malloc(size); \
     if (buffer != NULL) { \
         sprintf(buffer, __VA_ARGS__); \
-        sonnet_log(buffer, NULL, 1); \
+        sonnet_log(buffer, NULL, 0); \
         free(buffer); \
         buffer = NULL; \
     } \
