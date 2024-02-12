@@ -3,6 +3,7 @@
 
 #include <stdint.h>
 #include <stdlib.h>
+#include <stdio.h>
 
 #define SONNET_LOG_FILE_MAX_SIZE_DEFAULT 0xA00000 // 10 MB
 
