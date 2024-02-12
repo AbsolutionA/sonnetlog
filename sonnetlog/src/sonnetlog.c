@@ -6,15 +6,15 @@
 
 static char* sonnet_log_file_location = NULL;
 
-void sonnet_log_set_file_location_and_name(const char *file_location_and_name) {
-    sonnet_log_file_location = (char *)file_location_and_name; // Type cast so that the compiler does not complain.
+inline void sonnet_log_set_file_location_and_name(const char *file_location_and_name) {
+    sonnet_log_file_location = (char *)file_location_and_name;
     if (sonnet_log_file_location == NULL) {
         fprintf(stderr, "Warning: File location not given!\n");
         return;
     }
 }
 
-void sonnet_log(const char *msg, const char *tag_name, const int log_on_or_off) {
+inline void sonnet_log(const char *msg, const char *tag_name, const int log_on_or_off) {
 
     static size_t i = 0;
     
